@@ -40,7 +40,25 @@ Cmake will soon (but now all configuration is manual...I`m sorry)
 - set configuration for Masquerade in animation_settings.json
 - run Masquerade->Build Model->Set emotion coeffs and addition params if desired->Animate
 
-# Brief example
+**Usage as library**
+Entry point is Masquerate.cpp. For using in you own project u need define IViewer interface:
+
+shared_ptr<Settings> settings = make_shared<Settings>();
+shared_ptr<IChrono> chrono = make_shared<Chrono>();
+shared_ptr<Timeline> timeline = make_shared<Timeline>();
+IViewer* viewer = new IglViewer(settings, chrono, timeline);
+  
+Then load settings:
+viewer->LoadSettings(animation_settings_file);
+
+Final part:
+viewer->Show(params);
+
+# Brief theory
+Surray Face Model is 3D Morphable Model of human face as a linear combination of orthogonal basis vectors obtained by PCA of some samples.
+Limitations: cannot represent all possible faces and extract facial details - wrinkles, folds. For break limitation you can see on methods with Convolution Neural Networks. 
+
+# Examples
 **Face detection**
 
 >Input:
