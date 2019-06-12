@@ -40,8 +40,32 @@ Cmake will soon (but now all configuration is manual...I`m sorry)
 - set configuration for Masquerade in animation_settings.json
 - run Masquerade->Build Model->Set emotion coeffs and addition params if desired->Animate
 
-#Brief example:
+#Brief example
 **Face detection**
+Input:
 ![Input](https://github.com/CorvoOrc/Masquerade/blob/master/images/IntelSummer.jpg)
+Faces:
 ![Faces](https://github.com/CorvoOrc/Masquerade/blob/master/images/intelFaces.png "Faces")
-![Contours](https://github.com/CorvoOrc/Masquerade/blob/master/images/intelFaces.png "Contours")
+Landmarks:
+![Landmarks](https://github.com/CorvoOrc/Masquerade/blob/master/images/intelContours.png "Contours")
+
+**Animation**
+Input:
+![Amanda](https://github.com/CorvoOrc/Masquerade/blob/master/images/image_0010.png "Amanda")
+Mask:
+![Mask](https://github.com/CorvoOrc/Masquerade/blob/master/images/image_0010Mask.png "Mask")
+Reconstruction:
+![Reconstruction](https://github.com/CorvoOrc/Masquerade/blob/master/images/amanda_full.png "Reconstruction")
+Surprized animation:
+![Animation cropped](https://github.com/CorvoOrc/Masquerade/blob/master/images/amanda_combined.png "Animation cropped")
+
+Input:
+![Steshenko](https://github.com/CorvoOrc/Masquerade/blob/master/images/steshFace.png "Steshenko")
+Mask:
+![Mask](https://github.com/CorvoOrc/Masquerade/blob/master/images/steshMask.png "Mask")
+Reconstruction:
+![Reconstruction](https://github.com/CorvoOrc/Masquerade/blob/master/images/editor_common.png "Reconstruction")
+Angry animation:
+![Angry animation](https://github.com/CorvoOrc/Masquerade/blob/master/images/corvo_combined.png "Angry animation")
+Angry animation wired:
+![Angry animation wired](https://github.com/CorvoOrc/Masquerade/blob/master/images/corvo_combined_wired.png "Angry animation wired")
