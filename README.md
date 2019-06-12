@@ -4,7 +4,7 @@ Contains two project - LandmarkDetector and Masquerade.
 
 LandmarkDetector project provides the following functionality based on dlib:
 - detection of face (presents HOF and CNN detectors)
-- detection of face landmarks (ibug standard);
+- detection of face landmarks ([ibug](https://ibug.doc.ic.ac.uk/resources/300-W/) standard);
 - landmarks serialization;
 
 Masquerade project provides:
