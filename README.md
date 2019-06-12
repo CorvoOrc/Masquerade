@@ -33,6 +33,7 @@ Masquerade project provides:
 - boost (write params from console, system path operations)
 
 **Usage**
+
 Cmake will soon (but now all configuration is manual...I`m sorry)
 - You need install all dependency (prerequisite);
 - for LandmarkDetector set preprocessor definitions DLIB_HAVE_SSE2;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;
@@ -41,6 +42,7 @@ Cmake will soon (but now all configuration is manual...I`m sorry)
 - run Masquerade->Build Model->Set emotion coeffs and addition params if desired->Animate
 
 **Usage as library**
+
 Entry point is Masquerate.cpp. For using in you own project u need define IViewer interface:
 
 shared_ptr<Settings> settings = make_shared<Settings>();
