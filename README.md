@@ -46,7 +46,9 @@ Cmake will soon (but now all configuration is manual...I`m sorry)
 Entry point is Masquerate.cpp. For using in you own project u need define IViewer interface:
 
 `shared_ptr<Settings> settings = make_shared<Settings>();`
+
 `shared_ptr<IChrono> chrono = make_shared<Chrono>();`
+
 `shared_ptr<Timeline> timeline = make_shared<Timeline>();`
   
 `IViewer* viewer = new IglViewer(settings, chrono, timeline);`
