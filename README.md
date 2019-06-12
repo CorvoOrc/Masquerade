@@ -1,2 +1,47 @@
-# Masquerade
-Animation of emotions
+### Masquerade: header-only library for simple a animation of emotion
+
+Contains two project - LandmarkDetector and Masquerade.
+
+LandmarkDetector project provides the following functionality based on dlib:
+- detection of face (presents HOF and CNN detectors)
+- detection of face landmarks (ibug standard);
+- landmarks serialization;
+
+Masquerade project provides:
+- face reconstruction by RGB image and face landmarks (used [Surrey Face Model](http://https://www.cvssp.org/faceweb/3dmm/facemodel/ "Surrey Face Model"));
+- texturing of reconstuction;
+- viewer for result observation based on libigl and imgui;
+- animation of emotion used blendshapes for base point on timeline which processed by linear interpolation;
+- auto screenshoting of base point on timeline;
+
+## To be added
+- full head 3D model;
+- physics for model;
+- color PCA model (included in paid version SFM only)
+- target and actor animation (animation from an actor transferring to target face)
+- face reconstruction with CNN
+
+# Getting started
+**Prerequisite**
+- C++ 17;
+- dlib (face landmark detection);
+- eos (3D Morphable Face Model fitting framework);
+- opencv2 (image loading only);
+- libigl (geometry processing and visualisation)
+- imgui (gui)
+- cereal (serialization)
+- boost (write params from console, system path operations)
+
+**Usage**
+Cmake will soon (but now all configuration is manual...I`m sorry)
+- You need install all dependency (prerequisite);
+- for LandmarkDetector set preprocessor definitions DLIB_HAVE_SSE2;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;
+- generate .pts file from LandmarkDetector (in case using own images) or take from ibug database (in case using ibug images)
+- set configuration for Masquerade in animation_settings.json
+- run Masquerade->Build Model->Set emotion coeffs and addition params if desired->Animate
+
+#Brief example:
+**Face detection**
+![Input](https://github.com/CorvoOrc/Masquerade/blob/master/images/IntelSummer.jpg)
+![Faces](https://github.com/CorvoOrc/Masquerade/blob/master/images/intelFaces.png "Faces")
+![Contours](https://github.com/CorvoOrc/Masquerade/blob/master/images/intelFaces.png "Contours")
