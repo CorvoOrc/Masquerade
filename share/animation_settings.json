@@ -1,0 +1,15 @@
+{
+    "animation_settings": {
+        "emotion_size": 6,
+		"animation_speed": 1.0,
+		"min_speed": 0.25,
+		"max_speed": 2.0,
+		"speed_offset": 0.1,
+		"is_looped_animation": true,
+		"interpolation_shape_step": 0.2,
+		"interpolation_time_step": 2000,
+		"is_screen_capture": false,
+		"screen_path": "data/screens/",
+		"screen_ex": ".png"
+    }
+}
