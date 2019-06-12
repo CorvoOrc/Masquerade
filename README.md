@@ -61,6 +61,16 @@ Final part:
 
 `viewer->Show(params);`
 
+**Settings**
+
+All settings configuration are locates in animation_settings.json. In case you need custom params you can add them in Settings structure or write own structure with serialize() function:
+
+`friend class cereal::access;`
+
+`template <class Archive>`
+
+`void serialize(Archive& archive) { //...you serialization code } `
+
 # Brief theory
 Surray Face Model is 3D Morphable Model of human face as a linear combination of orthogonal basis vectors obtained by PCA of some samples.
 
