@@ -45,16 +45,21 @@ Cmake will soon (but now all configuration is manual...I`m sorry)
 
 Entry point is Masquerate.cpp. For using in you own project u need define IViewer interface:
 
-shared_ptr<Settings> settings = make_shared<Settings>();
+*shared_ptr<Settings> settings = make_shared<Settings>();
+  
 shared_ptr<IChrono> chrono = make_shared<Chrono>();
+  
 shared_ptr<Timeline> timeline = make_shared<Timeline>();
-IViewer* viewer = new IglViewer(settings, chrono, timeline);
+  
+IViewer* viewer = new IglViewer(settings, chrono, timeline);*
   
 Then load settings:
-viewer->LoadSettings(animation_settings_file);
+
+*viewer->LoadSettings(animation_settings_file);*
 
 Final part:
-viewer->Show(params);
+
+*viewer->Show(params);*
 
 # Brief theory
 Surray Face Model is 3D Morphable Model of human face as a linear combination of orthogonal basis vectors obtained by PCA of some samples.
