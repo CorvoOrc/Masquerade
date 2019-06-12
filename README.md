@@ -40,7 +40,7 @@ Cmake will soon (but now all configuration is manual...I`m sorry)
 - set configuration for Masquerade in animation_settings.json
 - run Masquerade->Build Model->Set emotion coeffs and addition params if desired->Animate
 
-#Brief example
+# Brief example
 **Face detection**
 Input:
 ![Input](https://github.com/CorvoOrc/Masquerade/blob/master/images/IntelSummer.jpg)
